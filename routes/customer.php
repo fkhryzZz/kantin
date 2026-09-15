@@ -1,6 +1,9 @@
 <?php
 
-use Illuminate\facades\Route;
- Route::get('/{canteen:slug}', function ($canteen) {
-    return "KATALOG: " . $canteen;
- })->name('home');
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function ($canteen) {
+    return view('layouts.customer', [
+        'canteen' => $canteen,
+    ]);
+})->name('home');

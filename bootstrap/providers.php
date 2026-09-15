@@ -6,9 +6,10 @@ use App\Modules\Kitchen\KitchenServiceProvider;
 use App\Modules\Ordering\OrderingServiceProvider;
 use App\Modules\Payments\PaymentsServiceProvider;
 use App\Modules\Reporting\ReportingServiceProvider;
+use App\Providers\AppServiceProvider;
 
 return [
-    App\Providers\AppServiceProvider::class,
+    AppServiceProvider::class,
 
     AdminServiceProvider::class,
     CatalogServiceProvider::class,
